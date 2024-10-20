@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lilsant Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/splitting/dist/splitting.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/splitting/dist/splitting-cells.css"
+  />
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+        <div class="header__logo-block">
+          <span class="header__logo">Lilsant</span>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link">Обо мне</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#projects" class="header__nav-link">Проекты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#skills" class="header__nav-link">Навыки</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="information">
+          <div class="information__about">
+            <h1 class="information__title">
+              Привет, меня зовут Антон Лебедев
+              <span class="information__hand">👋</span>
+            </h1>
+            <p class="information__subtitle">
+              I`m
+              <span class="information__subtitle-text"></span
+              ><span class="pipe">|</span>
+            </p>
+            <div class="information__buttons">
+              <a class="button button-yellow link link-btn" href="#projects"
+                >Список работ</a
+              >
+              <a class="link link-btn button" href="#contacts">Контакты</a>
+            </div>
+          </div>
+          <img
+            class="information__image"
+            src="images/image.svg"
+            alt="main img"
+          />
+        </section>
+        <section id="about" class="about">
+          <div class="about__main">
+            <h2 class="title" data-splitting="chars">Обо мне</h2>
+            <p class="about__description" data-splitting="words">
+              Front-end разработчик. Занимаюсь web-разработкой более
+              года. За это время создал несколько качественных сайтов для клиентов, выполнил десятки заказов на фриланс-биржах. Хочу
+              развиваться в этой сфере дальше, бок-о-бок с высококлассными
+              специалистами, получая от них ценный опыт.
+            </p>
+            <p class="about__description" data-splitting="words">
+              Мне 23 года. Обучался на онлайн-курсах. В данный момент времени работаю на фрилансе,
+              прохожу обучение в Школе 21.
+            </p>
+          </div>
+          <div id="contacts" class="about__contacts">
+            <ul class="about__list">
+              <li class="about__list-item">
+                <div class="about__contacts-img">
+                  <img src="images/smile.svg" class="about__contacts-icon" alt="smile img" />
+                </div>
+                <div class="about__contacts-info">
+                  <h3 class="about__contacts-title">Имя</h3>
+                  <span class="about__contacts-description">Антон Лебедев</span>
+                </div>
+              </li>
+              <li class="about__list-item">
+                <div class="about__contacts-img">
+                  <img src="images/mail.svg" class="about__contacts-icon" alt="mail img" />
+                </div>
+                <div class="about__contacts-info">
+                  <h3 class="about__contacts-title">Почта</h3>
+                  <span class="about__contacts-description"
+                    >lilsant@mail.ru</span
+                  >
+                </div>
+              </li>
+              <li class="about__list-item">
+                <div class="about__contacts-img">
+                  <img src="images/instagram.svg" class="about__contacts-icon" alt="instagram img" />
+                </div>
+                <div class="about__contacts-info">
+                  <h3 class="about__contacts-title">Instagram</h3>
+                  <span class="about__contacts-description">@ont0sha</span>
+                </div>
+              </li>
+              <li class="about__list-item">
+                <div class="about__contacts-img">
+                  <img src="images/phone.svg" class="about__contacts-icon" alt="phoone img" />
+                </div>
+                <div class="about__contacts-info">
+                  <h3 class="about__contacts-title">Телефон</h3>
+                  <span class="about__contacts-description"
+                    >+7(996)241-40-24</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="skills" class="skills">
+          <div class="skills__inner">
+            <h2 class="title" data-splitting="chars">Навыки</h2>
+            <ul class="skills__list">
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/html.svg"
+                    alt="html logo"
+                  />
+                  <span class="skills__item-title">HTML5</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/css.svg"
+                    alt="css logo"
+                  />
+                  <span class="skills__item-title">CSS3</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/javascript.svg"
+                    alt="javascript logo"
+                  />
+                  <span class="skills__item-title">JS</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/wordpress.svg"
+                    alt="vuejs logo"
+                  />
+                  <span class="skills__item-title">WordPress</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/react.svg"
+                    alt="react logo"
+                  />
+                  <span class="skills__item-title">React</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/bootstrap.svg"
+                    alt="bootstrap logo"
+                  />
+                  <span class="skills__item-title">Bootstrap</span>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-item-inner">
+                  <img
+                    class="skills__item-img"
+                    src="images/sass.svg"
+                    alt="sass logo"
+                  />
+                  <span class="skills__item-title">Sass</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects" class="projects">
+          <h2 class="title" data-splitting="chars">Проекты</h2>
+          <div class="projects__inner">
+            <div class="projects__card">
+              <div class="projects__card-img">
+                <img
+                  src="./images/mockuper.png"
+                  alt="Газета Северная звезда"
+                  class="projects__card-image"
+                />
+              </div>
+            <div class="projects__info">
+              <h3 class="projects__info-title">Газета "Северная зезда"</h3>
+              <span class="projects__info-tech"
+                >Technologies: PHP, CSS3, JS, WordPress</span
+              >
+              <div class="projects__link-container">
+                <a
+                  class="link button button-yellow"
+                  target="_blank"
+                  href="https://сев-звезда.рф"
+                >
+                  Посетить сайт
+                </a>
+                <a
+                  class="link button"
+                  target="_blank"
+                  href="https://github.com/Lilsant/north-star"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+            <div class="projects__card">
+              <div class="projects__card-img">
+                <img
+                  src="./images/jpb.jpg"
+                  alt="weatherapp-img"
+                  class="projects__card-image"
+                />
+              </div>
+              <div class="projects__info">
+                <h3 class="projects__info-title">Just Profit Broker</h3>
+                <span class="projects__info-tech"
+                  >Technologies: PHP, Sass, JS, WordPress</span
+                >
+                <div class="projects__link-container">
+                  <a
+                    class="link button button-yellow"
+                    target="_blank"
+                    href="https://lilsant.github.io/wapka/"
+                  >
+                    Посетить сайт
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="projects__card-img">
+                <img
+                  src="./images/computer.png"
+                  alt="computer-img"
+                  class="projects__card-image"
+                />
+              </div>
+              <div class="projects__info">
+                <h3 class="projects__info-title">Лендинг "Компьютерные курсы"</h3>
+                <span class="projects__info-tech"
+                  >Technologies: HTML5, CSS3, JS</span
+                >
+                <div class="projects__link-container">
+                  <a
+                    class="link button button-yellow"
+                    target="_blank"
+                    href="https://lilsant.github.io/computer-lp/"
+                  >
+                    Посетить сайт
+                  </a>
+                  <a
+                    class="link button"
+                    target="_blank"
+                    href="https://github.com/Lilsant/computer-lp"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="projects__card">
+              <div class="projects__card-img">
+                <img
+                  src="./images/quiz1.png"
+                  alt="geoquiz-img"
+                  class="projects__card-image"
+                />
+              </div> -->
+              <!-- <div class="projects__info">
+                <h3 class="projects__info-title">Geo Quiz</h3>
+                <span class="projects__info-tech"
+                  >Technologies: React, CSS3, JS</span
+                >
+                <div class="projects__link-container">
+                  <a
+                    class="link button button-yellow"
+                    target="_blank"
+                    href="https://lilsant.github.io/quizi.github.io/"
+                  >
+                    Посетить сайт
+                  </a>
+                  <a
+                    class="link button"
+                    target="_blank"
+                    href="https://github.com/Lilsant/quiz"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div> -->
+   
+            <div class="projects__card">
+              <div class="projects__card-img">
+                <img
+                  src="./images/yoga1.png"
+                  alt="yoga-img"
+                  class="projects__card-image"
+                />
+              </div>
+              <div class="projects__info">
+                <h3 class="projects__info-title">Лендинг "Yoga"</h3>
+                <span class="projects__info-tech"
+                  >Technologies: HTML5, Saas</span
+                >
+                <div class="projects__link-container">
+                  <a
+                    class="link button button-yellow"
+                    target="_blank"
+                    href="https://lilsant.github.io/yoga-lp/"
+                  >
+                    Посетить сайт
+                  </a>
+                  <a
+                    class="link button"
+                    target="_blank"
+                    href="https://github.com/Lilsant/yoga-lp"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
